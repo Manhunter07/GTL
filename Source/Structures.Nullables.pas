@@ -75,7 +75,7 @@ end;
 
 class operator TNullable<T>.Equal(const AFirst, ASecond: TNullable<T>): Boolean;
 begin
-  Result := ((AFirst = Null) = (ASecond = Null)) and Comparer.Equal(AFirst.FValue, ASecond.FValue);
+  Result := ((AFirst = Null) = (ASecond = Null)) and Comparer.Equal(AFirst.Value, ASecond.Value);
 end;
 
 class operator TNullable<T>.Equal(const ANullable: TNullable<T>;
@@ -110,7 +110,7 @@ begin
   begin
     raise ENullableException<T>.CreateRes(@Structures_Nullables_NoValue);
   end;
-  Result := Comparer.Compare(AFirst.FValue, ASecond.FValue) = GreaterThanValue;
+  Result := Comparer.Compare(AFirst.Value, ASecond.Value) = GreaterThanValue;
 end;
 
 class operator TNullable<T>.GreaterThan(const ANullable: TNullable<T>;
@@ -126,7 +126,7 @@ begin
   begin
     raise ENullableException<T>.CreateRes(@Structures_Nullables_NoValue);
   end;
-  Result := Comparer.Compare(ANullable.FValue, AValue) = GreaterThanValue;
+  Result := Comparer.Compare(ANullable.Value, AValue) = GreaterThanValue;
 end;
 
 class operator TNullable<T>.GreaterThanOrEqual(const ANullable: TNullable<T>;
@@ -136,7 +136,7 @@ begin
   begin
     raise ENullableException<T>.CreateRes(@Structures_Nullables_NoValue);
   end;
-  Result := (Comparer.Compare(ANullable.FValue, AValue) = GreaterThanValue) or Comparer.Equal(ANullable.FValue, AValue);
+  Result := (Comparer.Compare(ANullable.Value, AValue) = GreaterThanValue) or Comparer.Equal(ANullable.Value, AValue);
 end;
 
 class operator TNullable<T>.GreaterThanOrEqual(const AFirst,
@@ -146,7 +146,7 @@ begin
   begin
     raise ENullableException<T>.CreateRes(@Structures_Nullables_NoValue);
   end;
-  Result := (Comparer.Compare(AFirst.FValue, ASecond.FValue) = GreaterThanValue) or Comparer.Equal(AFirst.FValue, ASecond.FValue);
+  Result := (Comparer.Compare(AFirst.Value, ASecond.Value) = GreaterThanValue) or Comparer.Equal(AFirst.Value, ASecond.Value);
 end;
 
 class operator TNullable<T>.GreaterThanOrEqual(const ANullable: TNullable<T>;
@@ -178,7 +178,7 @@ begin
   begin
     raise ENullableException<T>.CreateRes(@Structures_Nullables_NoValue);
   end;
-  Result := Comparer.Compare(AFirst.FValue, ASecond.FValue) = LessThanValue;
+  Result := Comparer.Compare(AFirst.Value, ASecond.Value) = LessThanValue;
 end;
 
 class operator TNullable<T>.LessThan(const ANullable: TNullable<T>;
@@ -188,7 +188,7 @@ begin
   begin
     raise ENullableException<T>.CreateRes(@Structures_Nullables_NoValue);
   end;
-  Result := Comparer.Compare(ANullable.FValue, AValue) = LessThanValue;
+  Result := Comparer.Compare(ANullable.Value, AValue) = LessThanValue;
 end;
 
 class operator TNullable<T>.LessThanOrEqual(const ANullable: TNullable<T>;
@@ -204,7 +204,7 @@ begin
   begin
     raise ENullableException<T>.CreateRes(@Structures_Nullables_NoValue);
   end;
-  Result := (Comparer.Compare(AFirst.FValue, ASecond.FValue) = LessThanValue) or Comparer.Equal(AFirst.FValue, ASecond.FValue);
+  Result := (Comparer.Compare(AFirst.Value, ASecond.Value) = LessThanValue) or Comparer.Equal(AFirst.Value, ASecond.Value);
 end;
 
 class operator TNullable<T>.LessThanOrEqual(const ANullable: TNullable<T>;
@@ -214,7 +214,7 @@ begin
   begin
     raise ENullableException<T>.CreateRes(@Structures_Nullables_NoValue);
   end;
-  Result := (Comparer.Compare(ANullable.FValue, AValue) = LessThanValue) or Comparer.Equal(ANullable.FValue, AValue);
+  Result := (Comparer.Compare(ANullable.Value, AValue) = LessThanValue) or Comparer.Equal(ANullable.Value, AValue);
 end;
 
 class operator TNullable<T>.NotEqual(const ANullable: TNullable<T>;
