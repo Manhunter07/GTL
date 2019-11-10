@@ -33,6 +33,9 @@ The following list represents an informal evidence about the current progress of
 - [ ] Comparers [95%]
   - [x] (Core)
   - [ ] Defaults
+- [ ] Operation handlers [50%]
+  - [x] (Core)
+  - [ ] Defaults
 - [x] Structures
   - [x] (Core)
   - [x] Tuples
