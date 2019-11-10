@@ -8,7 +8,7 @@ The easy-to-use pre-designed and often also ready-to-use comparers are a valuabl
 
 ## How can I use this library?
 It's simple: Just clone (or, if you don't wish this, download) this library and put it into some location in your documents where you'd like it to be. I recommend a place where the current use has writing permissions, so that you can edit or update the library if you wish to.
-Once done, start Delphi, go to *Tools* > *Options...* > *Language* > *Delphi options* > *Library* > *Library path* and add the directory to your library paths. If you want to use pre-compiled DCUs in your projects, you may also add the DCUs folder to your browsing paths.
+Once done, start Delphi, go to *Tools* > *Options...* > *Language* > *Delphi options* > *Library* > *Library path* and add the *Source* folder of this library to your library paths. If you want to use pre-compiled DCUs in your projects, you may also add the DCUs folder to your browsing paths.
 When writing your code, simply link the units in your `uses` clause. The classes are then available in your source code.
 
 ## Are there samples available?
