@@ -16,11 +16,32 @@ Unfortunarly, as of now, there are no samples available. That's because I was ac
 
 ## Where can I find the lists, dictionaries, array helpers, ...?
 As of right now, these units are not included in the library, yet. Simply, because they are not ready for use. But I am working on them and I hope to release them into this library over the next weeks/months. I am sorry about this, but I can promise you: They are worth the waiting!
+The following list represents an informal evidence about the current progress of the different name spaces as parts of the library. Please keep in mind that some units are required for others which means that their progress is somehow connected to each other.
+- [ ] (Core) [20%]
+  - [ ] Exceptions
+  - [ ] Design editors
+- [ ] Helpers [20%]
+  - [ ] Simple types
+  - [ ] Arrays
+  - [ ] Standard records
+  - [ ] Basic classes
+- [ ] Collections [50%]
+  - [x] (Core)
+  - [ ] Lists
+  - [ ] Dictionaries
+  - [ ] Sets
+- [ ] Comparers [95%]
+  - [x] (Core)
+  - [ ] Defaults
+- [x] Structures
+  - [x] (Core)
+  - [x] Tuples
+  - [x] Nullables
 
 ## Am I permitted to edit or re-publish the files?
 Yes, you can basically do anything with this library. This library is available under the *Mozilla Public License* (short: *MPL*) 2.0 and may be redistributed under it. However, please follow the license terms written in the license and do not claim copyright for work you haven't done. You do not have to credit me or anything, but it would of course still be a gentleman job if you do.
-In case you want to fork the repository and want me to merge it, please stick to the formatting and code design conventions I was using allover the project.
+You can find a copy of the dated MPL license text [in the repository](LICENSE), or you can read the current one [on their home](https://www.mozilla.org/en-US/MPL/2.0/) page.
 
 ## Feature X is missing/buggy/needless, what can I do?
-In case you have an own contribution to this library, feel free to either fork it, or create an issue. I will then decide whether or not it should be moved into the main branch.
+In case you have an own contribution to this library, feel free to either fork it, or create an issue. I will then decide whether or not it should be moved into the main branch.In case you want to fork the repository and want me to merge it, please stick to the formatting and code design conventions I was using allover the project.
 Please try to understand that I work on this as a side-project and will not be able to spend several hours a day on it. If you think there is something really important missing or if you found a bug, and there is nothing you can do about it or you do not know how how to get it done, just create an issue and I will try to look into it as soon as possible. Please do **not** create more than one issue for the same problem!
